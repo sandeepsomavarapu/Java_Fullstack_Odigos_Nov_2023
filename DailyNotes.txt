@@ -1,0 +1,80 @@
+
+
+
+Java Fullstack:
+================
+
+		corejava 
+		database(MYSQl)
+		jdbc
+		servlet
+		jsp
+		spring 
+		springboot
+		jpa
+		hibernate
+		microservices
+
+	html,css,js,bs,ts,angular
+
+
+Language:
+=========
+		communication with human
+
+Programming Language:
+======================
+		communication with machine
+
+
+software
+
+		c,c++,java,python,.net.php,......
+		
+
+			POP							OOP	
+C,BCPL,B,COBOL,PHOTON,....			C++,java,python,.net,php.....
+
+		functions
+	pointers		Performance		Inehritance,Polymorphisam
+					Security		encapsulation,abstraction
+				
+
+
+why java?
+
+	1)platform independent  
+	2)garbage collection -->garbage collector  c,c++
+
+				1995,1996 ,
+				sun micro system-->oracle corporation
+				JDK 1.0
+				
+				21
+	
+
+			machine1		java app		WORA
+			sandeep			.net microsoft
+			windows11
+			
+
+machine2	  	machine3
+charan			varsha
+linux			mac
+
+			
+			
+				python-->1993--->simple
+
+
+
+
+
+
+
+
+
+
+
+
+
