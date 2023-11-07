@@ -1,70 +1,208 @@
 
 
-
-Java Fullstack:
-================
-
-		corejava 
-		database(MYSQl)
-		jdbc
-		servlet
-		jsp
-		spring 
-		springboot
-		jpa
-		hibernate
-		microservices
-
-	html,css,js,bs,ts,angular
-
-
 Language:
 =========
-		communication with human
+communication with human
 
 Programming Language:
-======================
-		communication with machine
-
-
-software
-
-		c,c++,java,python,.net.php,......
-		
-
-			POP							OOP	
-C,BCPL,B,COBOL,PHOTON,....			C++,java,python,.net,php.....
-
-		functions
-	pointers		Performance		Inehritance,Polymorphisam
-					Security		encapsulation,abstraction
-				
-
-
-why java?
-
-	1)platform independent  
-	2)garbage collection -->garbage collector  c,c++
-
-				1995,1996 ,
-				sun micro system-->oracle corporation
-				JDK 1.0
-				
-				21
+====================
+	communication with machine
 	
+	
+	HW--->S/W-->set of programs
 
-			machine1		java app		WORA
-			sandeep			.net microsoft
-			windows11
+		
+		 POP						 		 OOPs
+B,C,BCPL,COBOL,PHOTON...		c++,python,java,.net,php.....oopl
+
+	 functions							Objects
+
+pointers,no multi taskings
+				 
+
+				   1)performance    inheritance,polymorphisam
+				   2)security		encapsulation,abstraction
+
+
+
+python-->1993
+java -->1995
+
+			why java?  mobile application
+			
+			
+			1)Platform independent		WORA
+			2)garbage collection		garbage collector 			OAK-->java tree
+			
+			sun micro system / James gosling-->oracle 			microsoft 
+						user1    app1  					.net pdependent
+						windows11
+						
+		user2				   user3		
+		rajeshwari			   harshini
+		windows11				linux
+			
+			
+			netflix-->mobile(ios),tv(android),tab,laptop
+			sun micro system-->oracle
+			
+			java -->JDK 1995,1996 1.0
+			
+			
+	welcome to java world		
+	
+	
+	compailation,execution,.class,.java,jdk,jvm,jre...
+			
+			
+			
+			https://www.oracle.com/in/java/technologies/downloads/
+			
+			
+	Q)write a java program to print welcome message?
+
+alphabates 	english 26
+			
+keywords   53 -->all the keywords in java must be in lowercase 			
+			
+			.java
 			
 
-machine2	  	machine3
-charan			varsha
-linux			mac
+//printing welcome message 
 
+//
+//In class name everyword first letter should be capital 
+
+//JDK -->JRE -->JVM(0's 1's)byte code 
+
+
+// translater -->translation
+
+//source code -->compiler -->byte code 
+//.java-->compiler--->.class   javac filename.java for compailation
+
+java classname-->for execution  JVM
+
+
+Identifiers:
+=============
+ any name in java will call it as identifier
+
+	classname,varname,methdname,objname,....
+
+
+class Test@123
+{
+
+
+}
+		a-z
+		A-Z
+		0-9
+		$
+		_
+Variables:
+==========
+		234928374-- naren
+
+	12+13
+	
+	age=123;
+	
+	variable name of memory location
+	
+	syntax:
+	
+		datatype varname=value;
+
+Datatypes:
+=========
+
+	empid		123
+	name		narendra
+	contact		94949494
+	gender		M
+	salary		23.56
+	aadhar
+						byte age=31;
+
+	premitive dt   non-pdt
+
+	8 				String,arrays...
+
+		numeric data
+byte	1 byte		-128 to 127
+short	2 bytes		-32768 to 32767	
+int		4 bytes		-2147483648 to 2147483647
+long	8 bytes		-2 power 64 to (2 power 64)-1	
+		decimal data
+float	4 bytes		23.43123234234423f	  5to6 
+double	8 bytes							14 to 15 
+
+char	2 bytes					char gender='M'
+boolean	 1 bit	true,false		
+
+				1		0
+
+
+	local variables -->inside the method
+	global variables-->outside the method and inside the class
+	
+			2 types 
+				instance 
+				static 
+
+JDK-->JRE-->JVM
+
+	-->memory  areas
+
+
+Instance and static:
+====================
+
+
+Syntax
+		static 
+		non-static / instance 
+	
+Memory
+		if it is static will get memory space only once at the time of class loading into JVM 
+		if it is instance will get memory space for every object creation 
+
+					object -->instance of a class  car,tree
+				
+			class 	A
+				{
+				A obj=new A();
+				}			
+				classname objname=new classname();	
 			
-			
-				python-->1993--->simple
+Access
+		if it is static we can access by using class name
+		if it is instance  we can access by using obj reference
+
+Usage 
+
+		where we need one time memory will go for static 
+			ex:countryname,statename,collegename,orgname
+		unique data -->instance 
+			aadhar ,id,contact,accno....
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
