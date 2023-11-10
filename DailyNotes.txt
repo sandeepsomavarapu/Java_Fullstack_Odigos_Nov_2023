@@ -51,7 +51,7 @@ why java?
 				JDK 1.0
 				
 				21
-	
+	james gosling
 
 			machine1		java app		WORA
 			sandeep			.net microsoft
@@ -74,7 +74,8 @@ Java Installation
 welcome to java
 
 				Welcome.java
-
+javac filename.java -->compailation-->compailer
+java classname---->execution-->jvm
 
 53--keywords--->lowercase
 
@@ -96,6 +97,47 @@ any name in java will call it as identifier
 		0-9
 		$
 		_
+Variables:
+===========
+		variable is a name of memory location
+		
+		
+		reusability
+		
+		
+	syntax:
+	  datatype varname=value
+		
+		
+		
+		
+		PDT    				NPDT
+		
+	   8						String,Array....	
+		
+	byte	1 byte		-128 to 127
+	short	2			-32768 to 32767
+	int		4			-2147483648 to 2147483647
+	long	8			-2 power 63 to (2 power 63 )- 1
+	
+	float	4			23.549802347923f	 5 to 6
+	double	8								14 to 15
+		
+	char	2			
+	boolean 1 bit true,false
+		
+		
+				byte age 1
+				long age 8  
+		
+		
+		english
+		18 
+		
+		
+		2 types 
+		local variables
+		global variables
 
 
 
