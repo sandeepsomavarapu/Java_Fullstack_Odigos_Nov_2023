@@ -123,8 +123,8 @@ Variables:
 	float	4			23.549802347923f	 5 to 6
 	double	8								14 to 15
 		
-	char	2			
-	boolean 1 bit true,false
+	char	2			''
+	boolean 1 bit 		true,false
 		
 		
 				byte age 1
@@ -136,16 +136,47 @@ Variables:
 		
 		
 		2 types 
-		local variables
-		global variables
+		local variables :inside the method 
+		
+		global variables :outside the method with in the class
+
+				instance and static 
 
 
+	
+instance and static difference :
+===============================
 
-
-
-
-
-
+	syntax:
+	======
+			static int countryCode=91 //static 4 bytes 
+					int eid=123;
+					
+					javac filename.java  compiler 
+					java classname			JDK-->JRE-->JVM-->
+	memory:
+	======
+		static variables will get memory only once at the time of class loading into JVM
+		instance variables will get memory for every object creation
+	
+			class A
+			
+			
+			classname objname=new classname();
+			A a=new A();
+	
+	Access:
+	======
+			static variables can be accessable by using classname 
+			instance variables can be accessable by using objref 
+	
+	Usage:
+	=======
+			for common data will  go with static 
+									countryname,countryCode,orgName,schoolName....
+			for unique data will go with instance 
+			
+									eid,contact,aadhar,pan,account,.....
 
 
 
