@@ -145,7 +145,10 @@ Variables:
 
 	
 instance and static difference :
-===============================
+=============================== 
+
+
+		local and global
 
 	syntax:
 	======
@@ -177,6 +180,58 @@ instance and static difference :
 			for unique data will go with instance 
 			
 									eid,contact,aadhar,pan,account,.....
+
+
+Flow control:
+================
+
+
+
+
+JVM Architecutre:
+==================
+
+
+			execution flow
+			javac filename.java					java classname
+	.java --------------------------->	.class	-------------------->output
+			compiler--->compailation			JVM--->execution
+
+
+
+			JVM
+			
+				3 parts 
+				
+				
+								CLSS(class loader syb system)
+								
+								
+								memory areas
+								
+								5 MA
+								
+								execution engine
+
+
+		local variables			how much DT   when	where 
+		instance 
+		static 
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
 
 
 
