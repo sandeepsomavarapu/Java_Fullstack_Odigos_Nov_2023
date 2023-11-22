@@ -1,8 +1,8 @@
 package com.odigos.basics;
 
 public class Methods_Example {
-	int marks = 123;
-	static String schoolName = "xyz";
+	int marks = 123;  // global variable and instance variable
+	static String schoolName = "xyz";//global and static variable
 
 	public void displayMsg() { // default method with no return type and instance
 		System.out.println("welcome to india");
@@ -22,12 +22,12 @@ public class Methods_Example {
 
 	public static void main(String[] args) {
 
-		System.out.println(Methods_Example.subOfTwo(12, 13));
-		System.out.println(Methods_Example.schoolName);
-		Methods_Example obj = new Methods_Example();
-		System.out.println(obj.message());
+		System.out.println(Methods_Example.subOfTwo(12, 13));//static method calling using classname
+		System.out.println(Methods_Example.schoolName);//accessing static variable by using classname
+		Methods_Example obj = new Methods_Example();//object creation for instance properties memory
+		System.out.println(obj.message());//instance method calling using object reference
 		obj.addOfTwo(12, 14);
-		System.out.println(obj.marks);
+		System.out.println(obj.marks);//instance variable access by using object reference
 
 	}
 }

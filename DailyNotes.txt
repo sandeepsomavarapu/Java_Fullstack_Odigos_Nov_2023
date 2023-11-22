@@ -220,9 +220,31 @@ JVM Architecutre:
 
 
 
-
+package -->folder
+		pre defined --->java.lang default package 
+		user defined -->package 
 
 		
+
+
+	public static void main(String[] args) {
+
+	}
+
+methods 
+
+						methodname/variable name-->camelcase
+						class name -->pascalcase
+syntax:
+		accessmodifier static/instance returntype methodname 
+
+
+	reusability
+
+
+
+
+
 
 
 
