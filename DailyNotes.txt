@@ -242,20 +242,42 @@ syntax:
 	reusability
 
 
+		
+
+Arrays:
+==========
 
 
+		datatype varname=value;
 
 
+			int marks = 123; 
 
+				marks=	99;
 
-
-
-
-
-
-
-
-
+ to store group values -->arrays
+ 
+ 
+	int marks[]={12,23,43,55,63,533,53,99,89};//array literal
+	
+	index-->0,1,2,3,4,5,6,7,8
+ 
+ 
+	int marks[]=new int[9];//AIOE
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+		
 
 
 
