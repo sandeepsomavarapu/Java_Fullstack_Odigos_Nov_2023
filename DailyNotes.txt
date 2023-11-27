@@ -268,23 +268,58 @@ Arrays:
  
  
  
+					Performance		Inheritance,Polymorphisam
+					Security		encapsulation,abstraction
+ 
+ 
+ Inheritance:
+ ============
+ 
+	its a process of aquiring the features from one class to another class.
  
  
  
- 
- 
- 
- 
- 
- 
+		CODE Reusability:
 		
+		
+		extends ,implements
+
+
+	class X
+	{
+	
+	//1000 methods
+	
+	}
+	class Y extends X
+	{
+
+	//20 methods
+
+	}
 
 
 
 
+	interface X
+	{
+	
+	//1000 methods
+	
+	}
+	class Y implements X
+	{
 
+	//20 methods
 
+	}
 
+NOTE:
+=======
+
+	1) BY DEFAULT PACKAGE FOR EVERY JAVA FILE  java.lang
+	
+	2) BY DEFAULT PARENT CLASS FOR EVERY JAVA CLASS IS java.lang.Object
 
 
 
