@@ -319,7 +319,66 @@ NOTE:
 
 	1) BY DEFAULT PACKAGE FOR EVERY JAVA FILE  java.lang
 	
-	2) BY DEFAULT PARENT CLASS FOR EVERY JAVA CLASS IS java.lang.Object
+	2) BY DEFAULT PARENT CLASS FOR EVERY JAVA CLASS IS java.lang.Object--11
+
+
+
+Methods
+
+
+	public static void main(String[] args) {
+
+	}
+	public void add(int a, int b) {
+		System.out.println("add of two numbers : " + (a + b));
+	}
+
+	public void sub(int a, int b) {
+		System.out.println("sub of two numbers : " + (a - b));
+	}
+
+
+
+abstract  and concrete 
+
+		
+		concrete method/non-abstract:
+		
+		a method  with body/implementation
+
+		abstract method:
+		
+		a method  with out body/implementation
+
+
+
+	public abstract void mul(int a, int b) ;
+
+abstraction:
+
+
+	abstract classes :0-100%
+	
+	interface 			100%
+
+
+
+
+class			:its collection of only conrete methods
+
+abstract class	:its a combination both concrete and abstract methods 
+
+interfaces		:its a collection only abstract methods 
+
+
+we cannot create object for abstract class  and interface
+
+
+
+
+
+
+
 
 
 
