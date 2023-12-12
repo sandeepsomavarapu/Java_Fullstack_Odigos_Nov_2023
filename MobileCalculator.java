@@ -20,7 +20,7 @@ class PcCalculator extends Calculator {
 	}
 }
 
-public class MobileCalculator extends Calculator {
+public class MobileCalculator extends PcCalculator {
 
 	public void div(int a, int b) {
 		System.out.println("div of two numbers : " + (a / b));

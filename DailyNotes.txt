@@ -512,6 +512,69 @@ protected-->inside the package every where and outside the package only when eve
 
 
 
+Polymorphisam:
+==============
+
+		poly-->many
+		morphisam-->forms 
+
+		
+		method overloading 
+		
+					method name is same signature is different 
+					
+										no of params 
+										order of params
+										type of params
+					
+		
+		method overriding 
+
+					method name is same implementation is different
+
+
+
+	final 
+	
+		before the variable
+		before the method
+		before the class
+	
+
+constructor:
+===============
+
+	constructor is a special member functions
+	
+		which is used to intialise the object 
+	
+	constructor name must be classname 
+	constructor never return 
+
+class A
+{
+
+				A obj=new A();
+}
+
+
+		classname objname=new classname();
+		classname objname=new constructor();
+		
+		
+		
+		
+		
+
+
+
+
+
+
+
+
+
+
 
 
 
