@@ -563,22 +563,40 @@ class A
 		
 		
 		
-		
-		
+	to represent current class properties will use this keyword	
+								variable,method,constructor,object
+	to represent parent class properties will use super keyword	
+								variable,method,constructor		
+
+
+
+	inheritance,			abstraction,				polymorphisam,				encapsulation
+	extends,implements, abstract class and interface, methodoverloading,method overriding,
 
 
 
 
+public class Employee
+{
+private int	empid;
+private String	empname;
+private float	empsal;
+private String	empadd;
+	
+	
+	data must be private 
+	methods must be public 
+	
+	//setters and getters 
+
+} 
 
 
+class Test 
+{
+Employee emp=new Employee();
 
-
-
-
-
-
-
-
+}
 
 
 
