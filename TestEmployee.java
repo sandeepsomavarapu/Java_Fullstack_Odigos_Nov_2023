@@ -1,12 +1,24 @@
-package com.odigos.oops;
+package com.odigos.io;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
 
 public class TestEmployee {
-	public static void main(String[] args) {
-		Emplyoee emp = new Emplyoee(111,"mahesh",23.34f,"hyderabad");
-		emp.setEmpId(123);
-		emp.setEmpName("pavan");
 
-		System.out.println(emp.toString());//heap addresss
-		System.out.println(emp.getEmpId()+" "+emp.getEmpName());
+	public static void main(String[] args) throws IOException, ClassNotFoundException {
+//		FileOutputStream fos = new FileOutputStream("employees.txt");
+//		ObjectOutputStream oos = new ObjectOutputStream(fos);
+//
+//		Employee emp = new Employee(123, "odigos", 23000);
+//		oos.writeObject(emp);
+//		System.out.println("emp saved successfully");
+
+		FileInputStream fos = new FileInputStream("employees.txt");
+		ObjectInputStream oos = new ObjectInputStream(fos);
+
+		Employee emp = (Employee) oos.readObject();
+		System.out.println(emp);
 	}
+
 }
