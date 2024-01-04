@@ -737,6 +737,11 @@ import
 	read the data from file
 
 
+
+	1)registration			username,password -->write -->file
+	2)login					username,password -->read -->file-->throw invalid credentials 
+	
+
 	collections :
 	============
 	
@@ -766,9 +771,12 @@ import
 			3)lots of utility methods
 	
 	
+		LIST:-
 	
-	
-	
+		1)duplicates are allowed
+		2)insertion order followed/preserved 
+		
+			AL,LL,Vector,Stack
 	
 	
 	
