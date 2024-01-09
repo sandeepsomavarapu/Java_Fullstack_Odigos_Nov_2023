@@ -1,6 +1,7 @@
 package com.odigos.collections;
 
-import java.util.Stack;
+import java.util.ArrayList;
+import java.util.Iterator;
 
 //1)collections can hold/store  homogeneous/similar and heterogeneous data 
 //2)collection are not fixed in size , growable in nature  -->AL-->10-->16-->25 (cc*3/2)+1
@@ -13,7 +14,7 @@ public class ListEx {
 
 	public static void main(String[] args) {
 
-		Stack<String> list = new Stack<String>();// 10
+		ArrayList<String> list = new ArrayList<String>();// 10
 
 		list.add("suresh");
 		list.add("naresh");
@@ -25,6 +26,14 @@ public class ListEx {
 		list.add(0,"nihasvi");
 
 		System.out.println(list);
+		
+		Iterator<String> itr=list.iterator();
+		
+		while(itr.hasNext())
+		{
+			System.out.println(itr.next());
+		}
+		
 
 //		ArrayList list1 = new ArrayList();// 10
 //
@@ -45,6 +54,10 @@ public class ListEx {
 //		System.out.println(list1);
 //		System.out.println(list.contains("suresh"));
 //		System.out.println(list.size());
+		
+		
+		
+		
 	}
 
 }
