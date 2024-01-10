@@ -1,5 +1,6 @@
 package com.odigos.collections;
 
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.TreeSet;
 
@@ -12,9 +13,9 @@ import java.util.TreeSet;
 public class SetEx {
 
 	public static void main(String[] args) {
-		TreeSet<String> set = new TreeSet<String>();// 16
+		TreeSet<String> set = new TreeSet<String>(new ReverseOrder());// 16//Comparable-->NSO--->compareTo
 
-		set.add("hitesh");
+		set.add("hitesh"); // Comparator--->CSO-->compare
 		set.add("suresh");
 		set.add("naresh");
 		set.add("rajesh");
@@ -23,15 +24,35 @@ public class SetEx {
 		set.add("akash");
 		set.add("chethan");
 
-		System.out.println(set);
-		Iterator<String> itr = set.iterator();
+		System.out.println(set);// natural order--->A-z,1,2,3,4....
 
-		while (itr.hasNext()) {
-			String ename=itr.next();
-			if(ename.endsWith("esh"))
-				System.out.println(ename);
-		}
+		System.out.println("adigos".compareTo("odigos"));// 0
+
+//		compareTo 
+//		--return -ve if obj1 has to come before obj2
+//		--return +ve if obj1 has to come after obj2
+//		-- return 0 if obj1 & obj2 are equal.
+
+//		Iterator<String> itr = set.iterator();
+//
+//		while (itr.hasNext()) {
+//			String ename=itr.next();
+//			if(ename.endsWith("esh"))
+//				System.out.println(ename);
+//		}
 
 	}
+}
+class ReverseOrder implements Comparator<String> 
+{
+
+	@Override
+	public int compare(String obj1, String obj2) {
+		
+		//return -obj1.compareTo(obj2);
+		
+		return obj2.compareTo(obj1);
+	}
+	
 
 }
