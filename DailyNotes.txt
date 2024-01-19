@@ -792,18 +792,89 @@ import
 	linkedlist
 			
 			
+	MAP:
+========	
+
+
+comparable comparator -->functional interfaces -->SAM
+	
+	comparable -->java.lang-->compareTo-->FI-->NSO
+	comparator -->java.util-->compare-->FI-->CSO
+	
+		TS,TM --->alphabatical /ascedning order 
+		
+		
+		TS-->Comparable-->compareTo
 			
-	
-	
-	
 	
 	multi threading :
 	==================
 
 
 
+multi tasking
+
+		process based multi tasking 
+			
+			executing several tasks simultaniously where each task is seprate independent process.
+			
+		thread based multi tasking (multi threading)
+
+			executing several tasks simultaniously where each and every task is belongs same process.
 
 
+
+process-->its collection of threads
+
+thread-->thread is smallest unit of process
+
+
+class Test
+{
+
+segment-1
+
+
+
+segment-2
+
+
+
+
+segment-n
+
+
+
+}
+
+		2 ways
+		1.by implementing Runnable interface
+		
+		2.by extending Thread class
+
+Thread life cycle 
+					waiting/sleeping
+							|
+							|
+	new   runnable       running     dead/end
+
+
+synchronization
+
+		synchronized
+
+inter thread communication
+
+		thread--thread 
+		sleep(3000)-->sleeping 
+		wait()-->waiting 
+		notify()		
+		notifyAll()
+
+
+1 2 3 4 5 100
+ 2 4 6 8-->even-2
+1 3 5 7	-->odd-1 wait
 
 
 	
