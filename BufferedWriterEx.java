@@ -1,4 +1,4 @@
-package com.odigos.io;
+package com.ot9.fileio;
 import java.io.*;
 class BufferedWriterEx
 {
