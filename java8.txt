@@ -1,4 +1,4 @@
-
+	
 
 
 Functional programming
@@ -134,7 +134,7 @@ public int squareIt(int n){//obj
  
   return n*n;
 }
-
+n->n*n
 
 
 convert into Lambda Expression.
@@ -160,7 +160,9 @@ A
 public int m1(String s){
   return s.length();
 }		
-						
+		
+	s->s.length()
+		
 A a=new A();
 	a.m1();
 
@@ -310,10 +312,7 @@ public class StreamApiEx {
 java.util.function
 Predefined Functional Interfaces:43
 ================================   
-Predicate     one abstract method   test()
-Consumer
-Supplier
-Function
+`
 
 Predicate(i)
 ============
@@ -338,7 +337,7 @@ else{
 return false;
 }
 }
-
+AZ
 lamda:
 (Integer I)->I%2
 
@@ -585,9 +584,7 @@ sop(zone)//Asia/Calcutta
 
 
 
-ZoneId zone=ZoneId.of("America/New_York");
-ZonedDateTime zt=ZonedDateTime.now(zone);
-System.out.println(zt);//Asia/Calcutta
+ 
 
 
 IMP:
