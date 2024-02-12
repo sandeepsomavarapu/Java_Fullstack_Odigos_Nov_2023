@@ -923,6 +923,108 @@ inter thread communication
 		6)Get All Products Between Price range
 		7)Get ALl products by brand name
 	
+	Java8 features:
+	==============
+	1.8
+	
+	
+public void m1(int a,float b){
+
+ System.out.println(a*b);
+
+}
+
+convert into lambda Expression
+
+(int a,float b) -> System.out.println(a*b);
+	
+	FI-->SAM
+	
+	
+	predefined Functional Interface
+	
+	Comaprable
+	Comparator
+	
+	
+	java.util.function
+	
+	Predicate:boolean
+	Function
+	Supplier
+	Consumer
+	
+	
+	'
+	
+	::
+	method constructor refererence
+	
+	
+MYSQl:
+
+SQL-->structured query language
+
+	schema
+	
+	DDL-->create,alter,drop,truncate,rename
+	
+	DML-->insert,update,delete
+	
+	DRL-->select
+	
+	
+		eid ename esal eadd...
+	
+	
+#DDL-->data defination language create,alter,drop,truncate,rename
+create database odigos;
+use odigos;
+create table emp_info(empId int,ename varchar(15),esal int,eadd varchar(10));
+describe emp_info;
+alter table emp_info add edesg varchar(15);
+alter table emp_info drop edesg ;
+alter table emp_info change empid eid int;
+alter table emp_info rename to emps;
+truncate table emp_info;
+drop table emps;
+#DML -->data manipulation language  insert,update,delete
+select * from emp_info;
+insert into emp_info values(123,'suresh',9000,'hyderabad');
+insert into emp_info values(124,'naresh',12000,'banglore');
+insert into emp_info values(125,'rajesh',43000,'delhi');
+insert into emp_info values(126,'somesh',60000,'hyderabad');
+
+update emp_info set esal=18000 where empid=126;
+update emp_info set esal=18000,eadd="noida" where empid=123;
+delete from emp_info where empid=126;
+delete from emp_info;
+select * from emp_info where empid=125;
+select * from emp_info where esal<=15000;
+select empid,ename from emp_info;
+select * from emp_info;
+select max(esal) from emp_info;
+select min(esal) from emp_info;
+select avg(esal) from emp_info;
+select count(esal) from emp_info;
+select sum(esal) from emp_info;
+	   
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
