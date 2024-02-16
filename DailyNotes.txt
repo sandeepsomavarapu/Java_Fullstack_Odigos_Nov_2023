@@ -978,6 +978,8 @@ SQL-->structured query language
 	
 	
 #DDL-->data defination language create,alter,drop,truncate,rename
+	
+#DDL-->data defination language create,alter,drop,truncate,rename
 create database odigos;
 use odigos;
 create table emp_info(empId int,ename varchar(15),esal int,eadd varchar(10));
@@ -986,8 +988,8 @@ alter table emp_info add edesg varchar(15);
 alter table emp_info drop edesg ;
 alter table emp_info change empid eid int;
 alter table emp_info rename to emps;
-truncate table emp_info;
-drop table emps;
+truncate table emp_info;#delete all the records butnot table
+drop table emps;		#delete all the data along with table
 #DML -->data manipulation language  insert,update,delete
 select * from emp_info;
 insert into emp_info values(123,'suresh',9000,'hyderabad');
@@ -1001,13 +1003,75 @@ delete from emp_info where empid=126;
 delete from emp_info;
 select * from emp_info where empid=125;
 select * from emp_info where esal<=15000;
+select * from emp_info where esal between 10000 and 20000;
 select empid,ename from emp_info;
 select * from emp_info;
-select max(esal) from emp_info;
+select ename,max(esal) from emp_info;
 select min(esal) from emp_info;
 select avg(esal) from emp_info;
 select count(esal) from emp_info;
 select sum(esal) from emp_info;
+#Constraints check,notnull,unique,pk,fk
+insert into emp_info values(123,'suresh',9000,'hyderabad');
+insert into emp_info(ename,eadd) values('mahesh','hyderabad');
+create table emps(empId int primary key,ename varchar(15) not null,esal int check(esal>10000),eadd varchar(10));
+insert into emps values(123,'suresh',11000,'hyderabad');
+insert into emps(ename,eadd) values('mahesh','hyderabad');
+use odigos;
+CREATE TABLE dept(
+    deptno INT,
+    dname VARCHAR(14),
+    loc VARCHAR(13),
+	constraint pk_dept primary key (deptno)
+);
+
+INSERT INTO dept(deptno, dname, loc) VALUES
+(10, 'ACCOUNTING', 'NEW YORK'),
+(20, 'RESEARCH', 'DALLAS'),
+(30, 'SALES', 'CHICAGO'),
+(40, 'OPERATIONS', 'BOSTON');
+
+CREATE TABLE emp(
+    empno INT,
+    ename VARCHAR(10),
+    job VARCHAR(9),
+    mgr INT,
+    hiredate DATE,
+    sal DECIMAL(7,2),
+    comm DECIMAL(7,2),
+    deptno INT,
+   constraint pk_emp primary key (empno),
+   constraint fk_deptno foreign key (deptno) references dept (deptno) 
+);
+INSERT INTO emp VALUES
+(7839, 'KING', 'PRESIDENT', null, '1981-11-17', 5000, null, 10),
+(7698, 'BLAKE', 'MANAGER', 7839,'1981-05-01', 2850, null, 30),
+(7782, 'CLARK', 'MANAGER', 7839, '1981-06-09', 2450, null, 10),
+(7566, 'JONES', 'MANAGER', 7839, '1981-04-02',2975, null, 20),
+(7788, 'SCOTT', 'ANALYST', 7566, '1981-04-19',3000, null, 20),
+(7902, 'FORD', 'ANALYST', 7566, '1981-03-12', 3000, null, 20),
+(7369, 'SMITH', 'CLERK', 7902,'1980-12-17', 800, null, 20),
+(7499, 'ALLEN', 'SALESMAN', 7698,'1981-02-20', 1600, 300, 30),
+(7521, 'WARD', 'SALESMAN', 7698, '1981-02-22',1250, 500, 30),
+(7654, 'MARTIN', 'SALESMAN', 7698,'1981-09-28',1250, 1400, 30),
+(7844, 'TURNER', 'SALESMAN', 7698,'1981-09-08',1500, 0, 30),
+(7876, 'ADAMS', 'CLERK', 7788, '1987-05-23',1100, null, 20),
+(7900, 'JAMES', 'CLERK', 7698,'1981-03-12',950, null, 30),
+(7934, 'MILLER', 'CLERK', 7782,'1982-01-23',1300, null, 10);
+select * from emp;
+select * from dept;
+delete from dept where deptno=10;
+
+SELECT  E.EMPNO,E.ENAME,E.SAL,D.DNAME,E.DEPTNO FROM EMP E,DEPT D ;#CROSS JOIN
+
+SELECT  E.EMPNO,E.ENAME,E.SAL,D.DNAME,E.DEPTNO FROM EMP E,DEPT D WHERE E.DEPTNO=D.DEPTNO;#INNER JOIN
+INSERT INTO EMP(EMPNO,ENAME,SAL) VALUES(111,'SURESH',9000);
+SELECT  E.EMPNO,E.ENAME,E.SAL,D.DNAME,E.DEPTNO FROM EMP E LEFT OUTER JOIN DEPT D ON E.DEPTNO=D.DEPTNO;#LEFT OUTER JOIN
+SELECT  E.EMPNO,E.ENAME,E.SAL,D.DNAME,E.DEPTNO FROM EMP E RIGHT OUTER JOIN DEPT D ON E.DEPTNO=D.DEPTNO;#RIGHT OUTER JOIN
+
+
+
+
 	   
 	
 	
