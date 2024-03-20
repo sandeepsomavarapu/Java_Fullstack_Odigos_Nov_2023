@@ -1085,16 +1085,153 @@ JDBC:java database connectivity
 				3)native api driver 
 				4)thin driver/java driver 
 				
+	Jpa--->specification--->hibernate implementation
+		Hibernate:ORM
+			
+			
+			mysql querys
+			
+			jdbc:table creations
+			querys
+			
+			ORM-->object relational mapping -->hibernate,eclipse link,top link,ibatis....
+			
+			
+			JPA-->hibernate implementation
+			
+			no querys
+			no table creation
+			no exception handling 
+			cahce support 
+			
+			
+			jpa-->jdbc 
+			
+			non-invasive
+			
+			jars 
+			
+	entity class--->table 		
+			
+			EntityManager 
+			EntityManagerFactory
+			
+	configuration
+	META-INF
+persistance.xml
+
+database properties
+w
+
+
+hibernate properties 	
+			
+		JPQL-->classname 	
+			
+			SELECT * FROM emp_info;
+			select b from Employee b;
+			
+	Relationship:
+	1-1 	@onetoone
+	1-m
+	m-1
+	m-m
+
+
+
+
+Case study-3	
+
+			
+			Employee
+				id
+				name
+				sal
+				desg
+				Address address;//has-a
+			
+				
+	corejava,mysql,jdbc,jpa with hibernate,spring ,springboot
+		
+			
+	spring is a non-invasive framework,using spring	we can create light weight and loosley coupled application
+			
+			non-invasive:will never force to the developer to implement predefined api spring ,hibernate
+			invasive 	:will force to the developer to implemente predefined api ex:struts
+			
+			
+			servlets:web application
+			
+				1)implements Servlet
+				2)extends GenericServlet
+				3)extends HttpServlet 12 methods  1000*12
+			
+			EJB -ROD Johnson --2003 1.x 6.x
+			
+			light-weight
 			
 			
 			
+			loosley-coupled
+			
+				container 
+			
+				entire life cycle of a object
+			
+				creation 
+				wiring the object 
+				configuring te onject
+				destroying 
+			
+			BeanFactory
+			ApplicationCOntext
+			
+			configuration
+					xml config
+					annotation config
+					java config 
 			
 			
+			spring core /IOC/dependency injection module
+			
+			heart of the spring framework
+			20+
+			
+			spring core
+			spring jdbc
+			spring mvc
+			spring web
+			spring jpa
+			spring aop
+			...
 			
 			
+	<bean id="emp" class="com.odigos.spring.Employee">
+		<property name="empId"  value="123"></property>
+		<property name="empName" value="suresh"></property>
+		<property name="empSal"  value="19000"></property>
+		<property name="empDesg" value="trainer"></property>
+		<property name="address" ref="add"></property>
+	</bean>
+	<bean id="add" class="com.odigos.spring.Address">
+		<property name="hno"  value="123"></property>
+		<property name="colony" value="rbi colony"></property>
+		<property name="city"  value="hyd"></property>
+		<property name="pincode" value="605050"></property>
+	</bean>
+			
+			setter injection
+			constructor injection
+			autowiring -->byname,bytype,constructor
 			
 			
+spring has given annotations for user defined classes but not for predefined classes 
+
+jpa,datasource,transaction
 			
+			java config
+			
+			@Bean
 			
 			
 			
